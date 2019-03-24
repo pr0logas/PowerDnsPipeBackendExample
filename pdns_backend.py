@@ -7,7 +7,7 @@ from sys import stdin, stdout, stderr
 import requests
 
 # Parse real time data
-url = "https://task.forcandidate.com"
+url = "https://json.example.com"
 r = requests.get(url)
 json = r.json()
 
@@ -36,7 +36,7 @@ while True:
             stdout.write(r1 + r2 + r3)
         else:
             stderr.write("$$$ Sending SOA\n")
-            r = "DATA\tforcandidate.com\tIN\tSOA\t86400\t1\tvpntask7.taskforcandidate.com server.vpntask7.forcandidate.com 2008080300 1800 3600 604800 3600\n"
+            r = "DATA\tforcandidate.com\tIN\tSOA\t86400\t1\tqq.taskforcandidate.com aa.qq.forcandidate.com 2008080300 1800 3600 604800 3600\n"
             stdout.write(r)
             stderr.write(r)
 
